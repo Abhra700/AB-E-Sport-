@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AB E-Sport App — Download Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f172a; /* deep navy */
+      --bg2: #0b1020; /* almost black */
+      --accent1: #ff6b6b; /* coral */
+      --accent2: #7c5cff; /* violet */
+      --muted: #94a3b8;
+      --card: rgba(255,255,255,0.04);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#e6eef8;min-height:100vh}
+    .container{max-width:980px;margin:32px auto;padding:24px}/* top bar / logo */
+.top{display:flex;align-items:center;gap:16px}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo{width:86px;height:86px;border-radius:20px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:20px;box-shadow:0 6px 18px rgba(124,92,255,0.18)}
+.app-name{line-height:1}
+.app-name h1{margin:0;font-size:20px}
+.app-name p{margin:2px 0 0 0;color:var(--muted);font-size:13px}
+
+/* hero */
+.hero{margin-top:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
+.hero-left h2{margin:0;font-size:26px}
+.hero-left p{color:var(--muted);margin-top:8px}
+.download-cta{display:flex;gap:12px;margin-top:14px}
+.btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:12px 18px;border-radius:10px;color:#fff;font-weight:600;border:none;cursor:pointer;box-shadow:0 8px 24px rgba(124,92,255,0.12)}
+.btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#d9e6ff}
+
+/* gallery */
+.gallery{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.card{background:var(--card);padding:10px;border-radius:10px;flex:1 1 calc(33.333% - 12px);min-width:190px}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h4{margin:8px 0 4px 0;font-size:15px}
+.card p{margin:0;font-size:13px;color:var(--muted)}
+.card .download-small{margin-top:8px;padding:8px 10px;border-radius:8px;background:linear-gradient(90deg,var(--accent2),var(--accent1));border:none;color:#fff;width:100%;font-weight:600;cursor:pointer}
+
+/* details & contact */
+.details{margin-top:20px;background:rgba(255,255,255,0.02);padding:16px;border-radius:12px}
+.details h3{margin:0 0 8px 0}
+.details p{color:var(--muted);line-height:1.6}
+.contact{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+.contact .info{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;min-width:220px}
+.contact a{color:#dbe9ff;text-decoration:none}
+
+/* footer download */
+.bottom-cta{margin-top:20px;text-align:center}
+
+/* responsive */
+@media (max-width:880px){
+  .hero-grid{grid-template-columns:1fr}
+  .card{flex:1 1 calc(50% - 12px)}
+}
+@media (max-width:520px){
+  .card{flex:1 1 100%}
+  .logo{width:72px;height:72px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <div class="logo-wrap">
+        <div class="logo">AB</div>
+        <div class="app-name">
+          <h1>AB E-Sport</h1>
+          <p>Play tournaments on your mobile — Win and Fill Your Wallet</p>
+        </div>
+      </div>
+      <div style="margin-left:auto;color:var(--muted);font-size:13px">Version 1.0 • New Update</div>
+    </header><section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <h2>AB E-Sport — Download Now</h2>
+      <p>This app is made for you: Join tournaments, make friends, and win rewards. Below are some screenshots and details.</p>
+      <div class="download-cta">
+        <!-- Main Download Button: clicking will download the APK -->
+        <!-- Replace 'AB E-Sport.apk' with your actual APK URL if hosted online -->
+        <a href="AB E-Sport.apk" download>
+          <button class="btn">Download APK</button>
+        </a>
+        <button class="btn secondary">Play Store (Coming Soon)</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://via.placeholder.com/340x200.png?text=Mi+Tournament+Preview" alt="app preview" style="width:100%;border-radius:10px;"/>
+    </div>
+  </div>
+
+  <div class="gallery" style="margin-top:18px">
+    <!-- three sample cards with download buttons under each -->
+    <div class="card">
+      <img src="Screenshot_2025-09-18-21-24-42-40_ddf2d67cbf81c2867753740c408d053e.jpg?text=Screen+1" alt="screen1">
+      <h4>Screenshot — Match List</h4>
+      <p>Here you can see all live and upcoming matches.</p>
+      <button class="download-small">Download</button> 
+    </div>
+
+    <div class="card">
+      <img src="Screenshot_2025-09-18-21-22-53-24_ddf2d67cbf81c2867753740c408d053e.jpg?text=Screen+2" alt="screen2">
+      <h4>Screenshot — Refer To/ Earn 20</h4>
+      <p>Free Earning Refer To Earn 20.</p>
+      <button class="download-small">Download</button>
+    </div>
+
+    <div class="card">
+      <img src="IMG_20250918_195250.jpg?text=Screen+3" alt="screen3">
+      <h4>Screenshot — Profile & Withdraw</h4>
+      <p>Full control of withdrawal and payment history.</p>
+      <button class="download-small">Download</button>
+    </div>
+  </div>
+
+</section>
+
+<section class="details">
+  <h3>App Details</h3>
+  <p>
+    AB E-Sport is a simple and reliable tournament platform.
+    <br><br>
+    — Full tournament control from the admin panel.
+    <br>— Payment gateway, join/withdraw options available.
+    <br>— Fast and smooth UI, low data usage.
+    <br><br>
+    <strong>Note:</strong> This page is for example purposes only — your real download link and contact info can be added here.
+  </p>
+
+  <div class="contact">
+    <div class="info">
+      <strong>Contact Number</strong>
+      <div style="margin-top:6px"><a href="tel:+917001369382">+91 70013 69382</a></div>
+    </div>
+    <div class="info">
+      <strong>Email</strong>
+      <div style="margin-top:6px"><a href="mailto:abhra9334@gmail.com">abhra9334@gmail.com
+      </a></div>
+    </div>
+    <div class="info">
+      <strong>Contact User</strong>
+      <div style="margin-top:6px;color:var(--muted)">You can adjust the name and contact here if you want.</div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">
+    <p style="color:var(--muted);margin-bottom:10px">Click the button below to download the file:</p>
+    <!-- Bottom download button also set to download the APK -->
+    <a href="AB E-Sport.apk" download>
+      <button class="btn">Download APK</button>
+    </a>
+  </div>
+</section>
+
+<footer style="margin-top:22px;color:var(--muted);font-size:13px;text-align:center">
+  © 2025 AB E-Sport — Made for Gamers
+</footer>
+
+  </div>
+</body>
+</html>
